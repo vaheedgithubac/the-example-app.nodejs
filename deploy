@@ -1,0 +1,8 @@
+#!/bin/bash     
+#ssh userName@development-server-ip <<EOF       
+ cd /root/the-example-app.nodejs/Deployment 
+ git pull      
+ npm install --production      
+ pm2 restart all
+ exit      
+EOF
