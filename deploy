@@ -1,6 +1,6 @@
 #!/bin/bash     
-#ssh userName@development-server-ip <<EOF       
- cd /root/the-example-app.nodejs/Deployment 
+ ssh nuser@172.31.32.19 <<EOF       
+ cd  /home/nuser/the-example-app.nodejs
  git pull      
  npm install --production      
  pm2 restart all
